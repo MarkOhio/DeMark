@@ -1,0 +1,670 @@
+
+/* NAVIGATION BAR */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: cursive;
+}
+
+.active {
+  background-color: #232f42;
+  color: #516077;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family:cursive;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: cursive;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: cursive;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+
+/* WELCOME SLIDE */
+
+  #slide {
+    /* left: -100px; SET THE SLIDER TO BE OFFSCREEN INITIALLY */
+    width: 100%;
+    height: 200px;
+   
+    transition: 1s;
+}
+
+.wrap:hover #slide {
+    transition: 1s;
+    left: 0; /* SET THE SLIDER TO BE 0 */
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+.Containers img{
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when I hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+
+/*OUR SERVICES PART */
+
+body{
+  padding: 0 35px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /* background: #343F4F; */
+}
+
+
+
+
+.wrapper{
+  display: flex;
+  max-width: 1400px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel a{
+  margin-left: 14px;
+}
+.carousel.dragging img, .carousel.dragging a{
+  pointer-events: none;
+}
+.carousel img ,.carousel.dragging a{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+  border-radius: 10px;
+}
+.carousel img:first-child, .carousel a:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img, .carousel a{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img , .carousel a{
+    width: 100%;
+  }
+}
+
+.headtext{
+  font-size: 200%;
+  font-family: fantasy;
+  color: white;
+  text-align: center;
+
+}
+
+
+
+/* THE ADVERTISMENT PART */
+.adds{
+  width: 100%;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 7%;
+  border-bottom-right-radius: 20px ;
+}
+
+.adbtn a{
+
+  color: rgb(255, 255, 255);
+ text-decoration: none;
+
+  font-family: cursive;
+}
+
+.adbtn {
+  border-radius: 4px;
+  background-color: inherit;
+  border: solid rgb(255, 255, 255) 2px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  /* width: 100px; */
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+  cursor: pointer;
+}
+
+
+
+.adbtn a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.adbtn a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.adbtn:hover a {
+  padding-right: 25px;
+}
+
+.adbtn:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+.tablink:hover {
+  background-color: rgb(119, 119, 119);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 10%;
+}
+
+#AD1 {
+  background-image: url(pics/ads/InShot_20230602_053749627.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+color: rgb(0, 88, 252);}
+#AD2 {background-image: url(pics/ads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+#AD3 {background-image: url(pics/ads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;}
+#AD4 {background-image: url(pics/ads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+#AD5 {
+  background-image: url(pics/ads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+  #AD6 {
+    background-image: url(pics/ads.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+    #AD7 {
+      background-image: url(pics/ads.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;}
+      #AD8 {
+        background-image: url(pics/ads.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;}
+        #AD9 {
+          background-image: url(pics/ads.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;}
+          #AD10 {
+            background-image: url(pics/ads.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;}
+            #AD11 {
+              background-image: url(pics/ads.jpg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;}
+              #AD11 {
+                background-image: url(pics/ads.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;}
+                #AD12 {
+                  background-image: url(pics/ads.jpg);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;}
+                  #AD13 {
+                    background-image: url(pics/ads.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;}
+                    #AD14 {
+                      background-image: url(pics/ads.jpg);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: cover;}
+
+
+  /* UPDATE SECTION */
+.update-card{
+  display: flex;
+  margin: 5px;
+  overflow: auto;
+}
+
+.card, .card2, .card3 {
+border: 2px solid rgb(61, 101, 235);
+width: 410px;
+margin: 10px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius:15px ;
+}
+.card{
+
+}
+
+.card img, .card2 img, .card3 img{
+  padding: 5px;
+  border-bottom-left-radius: 15px;
+border-bottom-right-radius:15px ;
+}
+
+.card-text{
+  width: 400px;
+text-align: center;
+padding: 5px;
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 100%;
+}
+
+
+/* GAMES SECTION */
+.games{
+  display: flex;
+  overflow: auto;
+
+}
+#pllay img {
+  width: 200px;
+height: 200px;
+border-radius: 20px;
+border: 2px solid white;
+margin: 15px;
+box-shadow: 5px 5px 10px rgb(61, 101, 235);
+transition: transform .2s;
+}
+
+
+
+#pllay:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+/* CONTACT US SECTION*/
+.contact{
+  display: flexbox;
+  flex-wrap: wrap;
+  max-width: 100%;
+ }
+ #fb img{
+width: 35%;
+height:150px ;
+padding: 2px;
+border-radius: 10px;
+ }
+ #wa img{
+  width: 23%;
+height:150px ;
+padding: 2px;
+border-radius: 10px;
+ }
+ #tt img{
+  width: 37%;
+  height:150px ;
+  padding: 2px;
+  border-radius: 10px;
+
+ }
+ #tg img{
+  width: 25%;
+  height:150px ;
+  padding: 2px;
+  border-radius: 10px;
+ }
+
+ #yt img{
+  width: 25%;
+  height:150px ;
+  padding: 2px;
+  border-radius: 10px;
+ }
+ #ig img{
+  width: 27%;
+  height:150px ;
+  padding: 2px;
+  border-radius: 10px;
+ }
+ #tw img{
+  width: 18%;
+  height:150px ;
+  padding: 2px;
+  border-radius: 10px;
+ }
+
+ /* BACKGROUND IMAGES */
+.parallax2{
+  background-image: url('pics/wall1.jpeg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3{
+  background-image: url('pics/wall2.jpeg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+
+.parallax4{
+  background-image: url('pics/wall1.jpeg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:cursive;
+ 
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+
+  }
+
+
+  /* REVIEW SECTION */
+
+ .review{
+   max-width: 100%;
+  overflow: hidden;
+  border: 2px solid rgb(61, 101, 235);
+  border-radius: 5px;
+
+ }
+ .rev-text{
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+ }
+ .rev-text p{
+   background-color: white;
+   border-radius: 10px;
+   border: 2px solid white;
+   width: fit-content;
+   margin: 10px;
+   display: inline-block;
+ }
+ @keyframes marquee {
+  0% {
+    transform: translate3d(200%, 0, -100%);
+  }
+  100% {
+    transform: translate3d(-100%, 0%, 0);
+  }
+
+}
+
+.leaverev{
+  text-align: center;
+  color: white;
+ 
+}
+
+
+  .footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+ }

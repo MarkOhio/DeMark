@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body{
+            width: 100%;
+            margin:0;
+            padding: 0;
+            color: white;
+        }
+
+        table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+#img{
+    width: 5%;
+    padding: 10px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #00000041;
+}
+
+#nam{
+    width: 50%; 
+    text-align: left;
+}
+#pri{
+    width: 30%; 
+    text-align: right;
+}
+#ord{
+    width: 25%; 
+}
+
+.adbtn a{
+
+color: rgb(30, 255, 49);
+text-decoration: none;
+
+font-family: cursive;
+}
+
+.adbtn {
+border-radius: 4px;
+background-color: inherit;
+border: solid rgb(22, 255, 42) 2px;
+color: rgb(17, 255, 37);
+text-align: center;
+font-size: 15px;
+padding: 10px;
+/* width: 100px; */
+transition: all 0.5s;
+cursor: pointer;
+margin: 3px;
+cursor: pointer;
+}
+
+
+
+.adbtn a {
+cursor: pointer;
+display: inline-block;
+/* position: relative; */
+transition: 0.5s;
+}
+
+.adbtn a:after {
+content: '\00bb';
+/* position: absolute; */
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.adbtn:hover a {
+padding-right: 25px;
+}
+
+.adbtn:hover a:after {
+opacity: 1;
+right: 0;
+}
+
+body{
+            width: 100%;
+            margin:0;
+            padding: 0;
+            color: white;
+            background-color: wheat;
+
+/* Full height */
+height: 100%; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+        }
+
+        table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.footer {
+
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(0, 0, 0);
+color: white;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+       <div class="dropdown">
+          <button class="dropbtn">Follow us on 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Facebook</a>
+            <a href="#">Tic Toc</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+          </div>
+        </div> 
+        <a href="#top">About</a>
+      </div>
+
+     <div class="buyapp">
+        <table>
+            <tr>
+              <th id="img"><img src="pics/namegame.png" width="50px" height="50px"></th>
+              <th id="nam">Name [Apk]</th>
+              <th id="pri">Price [₦]</th>
+              <th id="ord">Order Now</th>
+            </tr>
+            <tr>
+                <td id="img" ><img src="pics/netflix1.png" width="50px" height="50px"></td>
+              <td id="nam"  >Netflix App [DeMark Modded] (With Ability to Download & Save Videos to Phone)</td>
+              <td  id="pri">₦1500</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20downloadable%20Netflix%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img" ><img src="pics/netflix2.png" width="50px" height="50px"></td>
+              <td id="nam"  >Netflix App [DeMark Modded]</td>
+              <td  id="pri">₦1000</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20Netflix%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/dstv.jpeg" width="50px" height="50px"></td>
+              <td id="nam">Dstv Apk [Android Mod]</td>
+              <td id="pri"> ₦1000</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20Dstv%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/pia.jpg" width="50px" height="50px"></td>
+              <td id="nam"> PIA Preiumn VPN ()</td>
+              <td id="pri">₦3000</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20PIA%20VPN%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/hma.jpg" width="50px" height="50px"></td>
+              <td id="nam"> HMA Preiumn VPN ()</td>
+              <td id="pri">₦2000</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20HMA%20VPN%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/express.jpg" width="50px" height="50px"></td>
+              <td id="nam">Express Modded VPN ()</td>
+              <td id="pri">₦1000</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20Express%20VPN%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/whats tools.jpg" width="50px" height="50px"></td>
+              <td id="nam">Bulk WhatsApp Messenger.apk [DeMark Modded]</td>
+              <td id="pri">₦500</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20Bulk%20WhatsApp%20messenger%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/chatgpt.jpg" width="50px" height="50px"></td>
+              <td id="nam">Chat GPt.Apk [Mod]</td>
+              <td id="pri">₦1000</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20CHATgPT%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/lucky.jpg" width="50px" height="50px"></td>
+              <td id="nam">Lucky patcher</td>
+              <td id="pri">₦300</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20Lucky%20Patcher%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/tgig.jpg" width="50px" height="50px"></td>
+              <td id="nam">AutoResponder_for_Telegram_Premium_.apk</td>
+              <td id="pri">₦500</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20AutoResponder_for_Telegram%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/wa.jpg" width="50px" height="50px"></td>
+              <td id="nam">AutoResponder_for_WhatsApp_Premium_.apk</td>
+              <td id="pri">₦500</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20AutoResponder_for_WhatsApp%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/tgig.jpg" width="50px" height="50px"></td>
+              <td id="nam">AutoResponder_for_Facebook_Premium_.apk</td>
+              <td id="pri">₦500</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20AutoResponder_for_Facebook%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/igr.jpg" width="50px" height="50px"></td>
+              <td id="nam">AutoResponder_for_Instagram_Premium_.apk</td>
+              <td id="pri">₦500</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20AutoResponder_for_Instagram%20app">Get Now</a></Button></td>
+            </tr>
+            <tr>
+                <td id="img"><img src="pics/youtubedwn.jpg" width="50px" height="50px"></td>
+              <td id="nam">Youtube Video Downloader.[Preiumn].apk</td>
+              <td id="pri">₦700</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20buy%20the%20Youtube_Downloader%20app">Get Now</a></Button></td>
+            </tr>
+            <!-- <tr>
+                <td id="img"><img src="pics/maze.jpg" width="50px" height="50px"></td>
+              <td id="nam"></td>
+              <td id="pri">₦</td>
+              <td id="ord"><Button class="adbtn"><a href="#">Get Now</a></Button></td>
+            </tr> -->
+            <tr>
+                <td id="img"><img src="pics/gamereq.jpg" width="50px" height="50px"></td>
+              <td id="nam">To request any Hacked Game App </td>
+              <td id="pri">₦</td>
+              <td id="ord"><Button class="adbtn"><a href="https://wa.me/+2348148083305">Get Now</a></Button></td>
+            </tr>
+          </table>
+          
+    
+   <div class="">
+       To request for an app thats not on the list 
+       <Button class="adbtn"><a href="https://wa.me/+2348148083305?text=I%20want%20to%20request%20for...">Request</a></Button>
+   </div>
+
+
+   <!-- contact developer section -->
+<Footer class="footer">
+    <i>@copyright DeMark TV 2023 </i><br>
+    <B  >Contact developer:<a href="https://wa.me/+2348087517272">  Mark Obosjie Ohio</a></B>
+    
+</div>
+
+</body>
+</html>
