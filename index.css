@@ -3,7 +3,7 @@
 .topnav {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Times New Roman', Times, sans-serif;
 }
 
 .topnav a {
