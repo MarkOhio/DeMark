@@ -14,7 +14,7 @@ font-family: 'Times New Roman', Times, serif;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .active {
@@ -32,7 +32,7 @@ font-family: 'Times New Roman', Times, serif;
 .dropdown {
   float: left;
   overflow: hidden;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .dropdown .dropbtn {
@@ -42,7 +42,7 @@ font-family: 'Times New Roman', Times, serif;
   color: rgb(0, 0, 0);
   padding: 14px 16px;
   background-color: inherit;
-  font-family:cursive;
+  font-family:sans-serif;
   margin: 0;
 }
 
@@ -53,7 +53,7 @@ font-family: 'Times New Roman', Times, serif;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .dropdown-content a {
@@ -63,7 +63,7 @@ font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   display: block;
   text-align: left;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -291,7 +291,7 @@ body{
 
 .headtext{
   font-size: 200%;
-  font-family: fantasy;
+  font-family: sans-serif;
   color: white;
   text-align: center;
 
@@ -323,7 +323,7 @@ body{
   color: rgb(255, 255, 255);
  text-decoration: none;
 
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .adbtn {
@@ -374,7 +374,7 @@ body{
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   color: white;
   display: none;
   padding: 100px 20px;
@@ -613,7 +613,7 @@ border-radius: 10px;
 body {
   margin: 0;
   padding: 0;
-  font-family:cursive;
+  font-family:sans-serif;
  
   overflow-x: hidden; /* Hide horizontal scrollbar */
 
@@ -627,7 +627,7 @@ body {
   overflow: hidden;
   border: 2px solid rgb(61, 101, 235);
   border-radius: 5px;
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Times New Roman', Times, sans-serif;
  }
  .rev-text{
   white-space: nowrap;
@@ -668,9 +668,7 @@ font-family: 'Times New Roman', Times, serif;
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, sans-serif;
  }
 
-body{
-    font-family: 'Times New Roman', Times, serif;
-}
+
